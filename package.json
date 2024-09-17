@@ -1,0 +1,11 @@
+{
+  "name": "hw-test",
+  "version": "1.0.0",
+  "description": "HelloWork technical test project",
+  "scripts": {
+    "dev": "pnpm -r --filter=\"./apps/*\" run dev",
+    "dev:front": "pnpm -C apps/front/ run dev"
+  },
+  "author": "Jérémy VINCENT",
+  "license": "ISC"
+}
