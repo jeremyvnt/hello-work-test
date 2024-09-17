@@ -3,18 +3,18 @@ import { AdsResponse } from '@/domains/job/data/types';
 
 export interface GetAdsParam {
   what: string;
-  when: string;
+  where: string;
   page?: number;
 }
 
 export const getAds = async ({
   what,
-  when,
+  where,
   page = defaultPage,
 }: GetAdsParam): Promise<AdsResponse> => {
   const searchParams = new URLSearchParams();
   searchParams.set('what', what);
-  searchParams.set('when', when);
+  searchParams.set('where', where);
   searchParams.set('page', page.toString());
   searchParams.set('limit', defaultItemsPerPage.toString());
 

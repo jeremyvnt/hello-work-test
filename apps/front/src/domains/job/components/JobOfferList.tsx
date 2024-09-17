@@ -15,7 +15,7 @@ interface JobOfferListProps {
 
 export const JobOfferList: FC<JobOfferListProps> = ({ page = defaultPage, what, onPageChange }) => {
   const payload = useMemo<GetAdsParam>(
-    () => ({ what, when: defaultCity, page, limit: defaultItemsPerPage }),
+    () => ({ what, where: defaultCity, page, limit: defaultItemsPerPage }),
     [what, page],
   );
   const { data, isLoading, error } = useGetAds(payload);
