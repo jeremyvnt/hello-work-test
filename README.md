@@ -52,18 +52,3 @@ To run both projects concurrently:
 pnpm start:all
 ```
 This will start the frontend and the API simultaneously.
-
-Useful Workspace Scripts
-Here are some useful scripts that can be run from the root of the workspace:
-
-pnpm run start:frontend: Starts the frontend project.
-pnpm run start:api: Starts the API project.
-pnpm run start:all: Runs both the frontend and API in parallel.
-pnpm install: Installs dependencies for both projects.
-Deployment
-Each project (frontend and API) can be deployed separately. Follow the deployment instructions in each project’s README.md file.
-
-The frontend can be deployed to Vercel or any other Next.js-compatible hosting service.
-The API can be deployed to a cloud platform such as AWS, Heroku, or any Node.js hosting provider.
-License
-This workspace is licensed under the MIT License. External contributions are not accepted.
