@@ -1,6 +1,3 @@
-### JetBrains ###
-.idea/
-
 ### Common ###
 node_modules/
 .env

@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "HelloWork technical test project",
   "scripts": {
-    "dev": "pnpm -r --filter=\"./apps/*\" run dev",
-    "dev:front": "pnpm -C apps/front/ run dev"
+    "start:all": "concurrently \"pnpm run start:front\" \"pnpm run start:api\"",
+    "start:front": "pnpm -C apps/front/ run dev",
+    "start:api": "pnpm -C apps/api/ run start"
   },
   "author": "Jérémy VINCENT",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
 }
