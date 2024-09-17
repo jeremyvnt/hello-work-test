@@ -60,7 +60,7 @@ export const JobOffer: FC<JobOfferProps> = ({
               </span>
             ))}
           </div>
-          {description && <p className="mt-4 text-gray-400 text-sm w-auto h-full">{description}</p>}
+          {description && <p className="mt-4 text-gray-400 text-sm line-clamp-3">{description}</p>}
         </div>
         <a
           className="p-8 lg:ml-4 py-2 px-10 rounded bg-blue-600 text-white font-bold flex items-center"
